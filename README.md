@@ -1,5 +1,9 @@
 # FocusBoard — Task Dashboard
 
+- **Live URL:** https://focus-board-sepia.vercel.app/
+- **GitHub Repo:** https://github.com/Ajay0548/FocusBoard-
+- **Loom Video:** [Paste your Loom link here]
+
 FocusBoard is a single-user task dashboard built with **React 19**, **TypeScript**, and **Vite**. It lets you create, edit, delete, and organize tasks with status and priority filters, search, and built-in statistics — all persisted to `localStorage` so your data survives page reloads.
 
 > ⚠️ Note: Despite the repository folder being named `mfa`, this project is **FocusBoard**, a task management dashboard — not an MFA/multi-factor authentication app.
