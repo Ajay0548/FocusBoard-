@@ -1,0 +1,58 @@
+import { Task } from '../types/task';
+
+export const initialTasks: Task[] = [
+  {
+    id: 'task-1',
+    title: 'Design System Typography & Color Tokens',
+    description: 'Finalize core visual foundations, contrast ratios, and token documentation in Figma.',
+    category: 'Design',
+    status: 'completed',
+    priority: 'high',
+    dueDate: '2026-11-20',
+  },
+  {
+    id: 'task-2',
+    title: 'Responsive Dashboard Navigation & Shell',
+    description: 'Implement desktop 240px sidebar, collapsible mobile drawer, and layout breakpoints.',
+    category: 'Development',
+    status: 'in-progress',
+    priority: 'high',
+    dueDate: '2026-11-24',
+  },
+  {
+    id: 'task-3',
+    title: 'Focus Notes Carousel Interaction',
+    description: 'Build keyboard-navigable slide carousel with active indicators and responsive layout.',
+    category: 'Frontend',
+    status: 'in-progress',
+    priority: 'medium',
+    dueDate: '2026-11-25',
+  },
+  {
+    id: 'task-4',
+    title: 'WCAG 2.1 AA Accessibility Audit',
+    description: 'Verify visible focus rings, aria-pressed states, and screen reader announcements.',
+    category: 'QA & Compliance',
+    status: 'todo',
+    priority: 'high',
+    dueDate: '2026-11-27',
+  },
+  {
+    id: 'task-5',
+    title: 'Local State Persistence & Edge Cases',
+    description: 'Ensure immutable state mutations, graceful fallback for corrupted localStorage, and data integrity.',
+    category: 'Architecture',
+    status: 'completed',
+    priority: 'medium',
+    dueDate: '2026-11-22',
+  },
+  {
+    id: 'task-6',
+    title: 'Candidate Walkthrough Video & Docs',
+    description: 'Record Loom walkthrough, generate AI usage disclosure, and verify submission checklist.',
+    category: 'Documentation',
+    status: 'todo',
+    priority: 'low',
+    dueDate: '2026-11-30',
+  },
+];

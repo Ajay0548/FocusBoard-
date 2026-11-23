@@ -1,0 +1,167 @@
+.header {
+  height: 70px;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  gap: 16px;
+}
+
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  max-width: 520px;
+}
+
+.menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  background-color: transparent;
+  transition: all var(--transition-fast);
+}
+
+.menuButton:hover {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text-primary);
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.searchIconWrapper {
+  position: absolute;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  color: var(--color-text-subtle);
+}
+
+.searchInput {
+  width: 100%;
+  height: 42px;
+  padding: 0 38px 0 42px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+  font-size: 0.925rem;
+  color: var(--color-text-primary);
+  transition: all var(--transition-fast);
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-subtle);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--color-surface);
+  box-shadow: 0 0 0 3px var(--color-primary-ring);
+}
+
+.clearSearchBtn {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  color: var(--color-text-muted);
+  background-color: var(--color-border);
+  font-size: 12px;
+}
+
+.clearSearchBtn:hover {
+  background-color: var(--color-text-subtle);
+  color: #FFFFFF;
+}
+
+.rightGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.newTaskButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 20px;
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border-radius: var(--radius-md);
+  font-size: 0.925rem;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(79, 70, 229, 0.2);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.newTaskButton:hover {
+  background-color: var(--color-primary-hover);
+  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
+}
+
+.newTaskButton:active {
+  transform: translateY(1px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 16px;
+    height: 64px;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .newTaskButton {
+    padding: 0 14px;
+    height: 44px; /* Ensure 44px touch target on mobile */
+  }
+
+  .newTaskText {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .header {
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .searchInput {
+    height: 44px;
+    font-size: 0.875rem;
+  }
+}
